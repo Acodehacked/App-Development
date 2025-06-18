@@ -1,8 +1,6 @@
 import 'dart:io';
 
-/// Entry point of the program
-/// Prompts the user to enter personal information such as name, phone number,
-/// age, height, weight, address, and hobbies. Displays the entered data in a formatted manner.
+
 void main() {
   // Prompt user for their name
   stdout.write("Enter your name: ");
