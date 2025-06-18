@@ -40,7 +40,7 @@ void main() {
   }
 
   // Display the collected information
-  print('\n--- D . E . T . A . I . L . S ---');
+  print('\n DETAILS \n');
   print('\n\tName: $name');
   print('\tPhone Number: $ph');
   print('\tAge: $age');
