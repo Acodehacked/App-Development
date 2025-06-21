@@ -1,8 +1,6 @@
 import 'dart:io';
 
-/// Entry point of the program.
-/// Prompts the user to input two space-separated integers,
-/// calculates their sum, and displays the result.
+
 void main() {
   // Prompt the user to enter two numbers separated by space
   stdout.write("Enter 2 numbers: ");
