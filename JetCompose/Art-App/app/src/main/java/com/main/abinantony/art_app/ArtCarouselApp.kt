@@ -7,6 +7,8 @@ import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
@@ -15,7 +17,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import coil.compose.rememberAsyncImagePainter // For loading images from URLs
+import coil.compose.rememberAsyncImagePainter
+
+//import coil.compose.rememberAsyncImagePainter // For loading images from URLs
 
 @Composable
 fun ArtCarouselApp(artworks: List<Artwork>) {
@@ -147,7 +151,25 @@ fun DefaultPreview() {
 
 // Dummy sample data for preview
 val sampleArtworks = listOf(
-    Artwork(1, "The Starry Night", "Vincent van Gogh", "1889", "https://dummyimage.com/600x600/000/fff.png&text=Artwork+1"),
-    Artwork(2, "Mona Lisa", "Leonardo da Vinci", "1503-1506", "https://dummyimage.com/600x600/ccc/000.png&text=Artwork+2"),
-    Artwork(3, "The Persistence of Memory", "Salvador Dalí", "1931", "https://dummyimage.com/600x600/aaa/fff.png&text=Artwork+3")
+    Artwork(
+        1,
+        "The Starry Night",
+        "Vincent van Gogh",
+        "1889",
+        "https://dummyimage.com/600x600/000/fff.png&text=Artwork+1"
+    ),
+    Artwork(
+        2,
+        "Mona Lisa",
+        "Leonardo da Vinci",
+        "1503-1506",
+        "https://dummyimage.com/600x600/ccc/000.png&text=Artwork+2"
+    ),
+    Artwork(
+        3,
+        "The Persistence of Memory",
+        "Salvador Dalí",
+        "1931",
+        "https://dummyimage.com/600x600/aaa/fff.png&text=Artwork+3"
+    )
 )
